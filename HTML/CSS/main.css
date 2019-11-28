@@ -1,0 +1,194 @@
+h1 {
+	background-color:red;
+	/* padding:40px  her yerden boşluk bırakır ;
+	padding-left:20px; */
+	
+	padding:20px 30px 20px 550px; /* üst sağ alt sol 
+	
+	(iki tane yazınca üst-alt sağ-sol olur */
+	
+	border-style:solid;
+	border-width:6px;
+	border-color:green;
+	border-style:dashed;
+	border-style:dotted;
+	border: 9px blue ridge;
+	border-bottom:13px groove green;
+	
+	margin:30px 50px 70px 90px;
+	margin:0px;
+} /* padding içeriği, margin kutuyu ayarlar */
+
+body{margin:0px}/* bodynin default margini var */
+
+div{
+	border:2px groove red;
+	background-color:yellow;
+	width:150px;
+	height:150px;
+	padding:75px;
+	margin:6px;
+}
+	
+
+body {
+
+	background-image:url(../images/9539405938738.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-attachment:fixed;
+	background-color:#d4af80;
+	background-image:linear-gradient(to top right, yellow, turquoise,red);
+	
+}
+
+
+
+span{text-decoration:underline;}
+
+p:first-letter{
+	color:red;
+	font-size:20px;
+	font-weight:bold;
+}
+
+#up{padding-right:200px;}
+
+#up:first-line{
+	text-decoration:underline;
+	color:yellow;
+	font-style:italic;
+}
+
+div p:first-child{
+	color:blue;
+	}
+
+div p:last-child{
+	background-color:white;
+	width:80px;
+	margin-left:-3px;
+	padding-left:3px
+}	
+	
+div p:before /* after */ {content:"sayı: "}	
+
+a{
+	background-color:#696969;
+	font-family:Comic Sans MS;
+	color:#1E90FF;
+	font-size:40px;
+	margin-left:20px;
+	position:absolute;
+	margin-bottom:20px;
+	
+}
+a:hover{
+	background-color:#A9A9A9;
+	font-size:30px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:5px;
+	padding-bottom:12px;
+	position:absolute;
+	margin-bottom:20px;
+}
+
+a:active{
+	background-color:white
+}
+a:visited{
+	color:#00CED1
+}
+
+
+ul.a{
+	list-style-type:circle;
+}
+ul.b{
+	list-style-image:url(../images/indir.jpg);
+	
+}
+ol.c{
+	list-style-position:inside;
+}
+ol.d{
+	list-style-type:lower-greek;
+}
+
+img{
+	border-radius:50%;
+	border:1px solid #d4af80; 
+	width:200px;
+	height:200px;
+} 
+
+#kose{
+	background-color:#d4af80;
+	border:solid 10px;
+	border-radius:25px;
+	border-top-left-radius:500px;
+	border-color:#ff6216;
+	width:200px;
+	height:100px;
+	padding-left:110px;
+	padding-top:50px;
+	margin:10px
+}
+
+.foto{
+	float:left;
+	margin-right:90px;
+}
+
+.clr{clear:both}
+
+.nclr{
+	width:1100px;
+	height:100px;
+	margin-top:80px;
+	
+}
+
+table{
+	border:2px solid black;
+	border-collapse:collapse;
+}
+td{
+	border:2px solid black;
+	border-collapse:collapse;
+	padding:4px;
+}
+th{
+	border:2px solid black;
+	border-collapse:collapse;
+	padding:8px;	
+}
+
+
+fieldset {
+	width:300px;
+	background-color:#efbac5;
+}
+
+fieldset legend {
+	font-size:18px;
+	font-style:italic;
+	font-weight:bold;
+	
+}
+	
+input[type=text] {
+	background-color:yellow;
+	
+}	
+input[type=text]:focus {
+	background-color:gray;
+}	
+input[type=text]:hover {
+	background-color:white;
+	color:green
+}
+	
+	
+	

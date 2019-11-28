@@ -1,0 +1,101 @@
+@import "css/dosya/style.css"; /* diğer css dosyasını buraya çağırma (üzerinde başka bir kod olmaması lazım)*/
+h1 {color:blue}
+
+div	*{color:red} /* "*" == tüm nesneler seçer (evrensel seçici), başındaki ifade hangilerini seçeceğini belirtir */
+
+#test {color:yellow} /* belirlenen ıd ye göre seçer*//*tek nesne*/
+
+div.test {color:purple} /*birden fazla nesne aynı classa dahil olabilir*/
+
+ul li ul li {color: pink} /* x nesnesinde bulunan y nesnelerini seçmek için kullanılır */
+
+	a {color:aqua} /* tüm hepsini seçer */
+	
+/* a:link{background-color:fuchsia} /* ziyaret edilmeyen link */
+/* a:visited{background-color:red} /* ziyaret edildikten sonra */ 
+
+div.test1+p {color:maroon} /* "+" bitişik nesneyi seçmeye yarar, şu an bitişik olan span olduğu için işlem geçersiz */
+
+ul.test2 > li {border: 1px solid #ddd} /* seçilen nesnenin bir alt hiyerarşisindeki nesneleri seçer */
+
+div.test3 ~ p {color:gray} /* bitişik olmasa da seçmeyi sağlar ama alt hiyerarşideki nesneyi seçmez */
+
+a[title] {color:lime} /* nesne içinde nitelik seçici */
+
+a[title="test2"]{color:blue} /* nesne içindeki niteliğin ifadesini belirterek seçme*/
+a[title*="test3"]{color:white} /* nesne içindeki nitelikte geçen bir ifadeyi belirterek seçme. */
+a[title^="ilk"]{color:teal} /* nesne içindeki niteliğin başladığı ifadeyi belirterek seçme. */
+/* a[title$="son"]{color:teal} nesne içindeki niteliğin sonundaki ifadeyi belirterek seçme. */
+a[title~="test"]{color:teal} /* test2 kendi başına bir ifadeyse yani test2323 gibi bitişik başka ifade yoksa seçer (boşluklu olabilir)*/
+
+input[type="checkbox"]:checked + label {background-color: yellow} /* "type'i checkbox olan checked olarak işaretlenirse bitişiğindeki labelin arka planını sarı yap." */
+
+div.test4::after{content:", sonuna ekler"}
+div.test4::before{content:"başına ekler; ";color:red} 
+
+a.test5:not(:hover){color:silver} /* fare üstüne gelince */
+
+article:not(#test6){color:blue} /* id si test6 değilse mavi yap */
+
+article:first-letter{font-size:40px} /* baş harf seçici */
+article.test7:first-line{background-color:black} /* ilk satır seçici */
+
+div.test8 p:nth-child(3){background-color:yellow} /* -ıncı nesneyi seçer, paragrafsa boyar */
+div.test8 p:nth-last-child(2){background-color:	#660033} /* sondan -ıncı nesneyi seçer, paragrafsa boyar *//*nth siz yazınca direkt en sonuncusunu seçer, bi de first hali var */
+
+div.test8 p:nth-last-of-type(4){background-color:#660033} /* -ıncı paragrafı seçer *//*nth siz yazınca direkt en sonuncusunu seçer, bi de first hali var */
+
+div p:only-child{background:#CCCC99} /* p tek ise */
+div p:only-of-type{background:#FFFF66} /* sadece 1 tane p varsa*/
+
+input:focus {background-color:black} /* seçilen bir şeyi seçtiğinde işler */
+input{color:white}
+
+p.test10{display:none}
+a.test9:active +p.test10 {display:block}
+
+:root {background-color:#99CCCC} /* tüm dosya, :root=html */
+/* html {background-color:#33CCCC} */
+
+p:empty{height:10px;background-color:#009900} /* boş dosyaları seçer */
+
+p#test01{display:none}
+p#test01:target{display:block}/*hedef seçer */
+
+input.test02:enabled{border-color:green} /*  geçerli olanları seçer*/
+input.test02:disabled{border-color:red} /* disabled olanları seçer */
+
+input:valid{background-color:green}/* istenen durum sağlanmışsa*/
+input:invalid{background-color:red}/* istenen durum sağlanmamışsa*/
+
+p#test03::selection{background-color:red;color:black}
+
+h1{font-family:tahoma, arial} /* ilk olanı gösterir, ilki yoksa diğerleri */
+h1{font-size:100px;
+	font-size:small;
+	font-size:xx-large} /* sonuncusu geçerli olur. */
+h1{font-style:oblique; font-style:italic; font-style:normal} /* yazının eğikliğini ayarlar */
+h1{font-variant:small-caps} /* yazıyı büyütür */
+h1{font-weight: lighter; font-weight:850} /*kalınlık*/
+h1{font:italic small-caps 200px/210px arial} /* font-style font-variant font-weight font-size/line-height font-family    (size ve family mecburi)    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
