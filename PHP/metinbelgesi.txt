@@ -1,0 +1,5 @@
+<b>1.</b> satırdaki her şey buuu <br>
+<b>2.</b> satır xd
+<?php
+$xy="deneme";
+?>

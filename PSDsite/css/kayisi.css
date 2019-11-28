@@ -1,0 +1,45 @@
+/* KAYISI */
+.kk{
+	width:1137px;
+	height: auto;
+	margin: 0 auto;
+}
+.kk > span{
+	float:left;
+	height:204px;
+	width:216px;
+	border:2px solid #f9a52d;
+	margin-left:7px;
+	margin-top:15px;
+}
+.kk span div{
+	float:left;
+	padding-left:10px;
+	margin-top:10px;
+	color:#51381d;
+	font-size:15px;
+	width: 174px;
+}
+.kk span a img{
+	height:141px;
+	width:216px;
+}
+.kargo{
+	float:right;
+	font-size:10px;
+	width:90px;
+	height:20px;
+	background-color:#f8960b;
+	margin-right:-29px;
+	margin-top:3px;
+	padding-top:5px;
+	padding-left:4px;
+	color:#fff;
+}
+
+/* --------------------- */
+
+.footer{
+	margin-top: 480px;
+
+}

@@ -1,0 +1,195 @@
+/* MAIN CUSTOM */
+
+ul, li {
+	padding:0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+
+/* CUSTOM */
+body {
+	font-family: 'IBM Plex Serif', serif;
+	font-size:14px;
+	background-color:#F2F5F4;
+}
+
+/* HEADER */
+header{
+	background:#F2F5F4;	
+}
+header .logo{
+	margin:10px auto;
+	margin-top:-7px;
+}
+header .logo span img{
+	position:relative;
+	left:50%;
+	transform: translate(-50%,-50%);
+	top:75px;
+	width:150px;
+	height:120px;
+	border-radius:50%;
+}
+header nav ul{
+	width:320px;
+	margin:0 auto;
+}
+header nav ul li{
+	float:left;
+	padding:11px;
+}
+header nav ul li:last-child{padding-right:0px}
+.clear{
+	clear:both
+}
+header nav ul li a{
+	color:#99A09D;
+	text-shadow:0.3px 0.3px 0.3px Maroon;
+	font-size:15px;
+}
+header nav ul li a:hover{
+	color:black
+}
+
+/* SLIDER */
+.slider {
+	height:400px;
+	background:url(../img/mardin-web-site-arka-plan-2-660x330.jpg) no-repeat center 50%;
+	background-size:cover;
+	opacity:0.9;
+	position:relative;
+}
+.slider p.text, .slider p.stext{
+	position:absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-shadow:1px 1px 1px #555;
+}
+.slider p.text{
+	font-size:50px;
+	width:100%;
+	text-align:center;
+	color:#d9ccab;
+	top:10%;
+	font-weight:600;
+}
+.slider p.stext{
+	top:140px;
+
+}
+.slider p.stext a{
+	text-decoration:none;
+	color:Goldenrod;
+	font-size:19px;
+	font-weight:bold;
+	padding-left:10px;
+}
+.slider p.stext a:hover{
+	opacity:0.7;
+}
+.container{
+	max-width:1000px;
+	height:auto;
+	margin:0 auto;
+	overflow:hidden;
+	background-color:#F2F5F4;
+}
+.content .box{
+	width:50%;
+	float:left;
+}
+.content .box img{
+	width:96%;
+	margin-left:2%;
+	border:solid 2px #d9ccab;
+	margin-top:2%;
+	position:relative;
+}
+#img2{
+	margin-right:2%;
+}
+.content1{
+	position:absolute;
+	top: 788px;
+	font-size:23px;
+	font-weight:bold;
+    width:40%;
+	display:none;
+	color:black;
+	text-align:center
+}
+.content .box img:hover + .content1{
+	display:block;
+}
+.content .box img:hover{
+	opacity:0.6;
+}
+.content1:hover{
+	display:block
+}
+.başlık , .by {
+	font-size:18px;
+	text-align:center;
+	padding:5px;
+	text-shadow:1px 1px 1px black;
+}
+.başlık{
+	font-size:22px;
+}
+.başlık a , .by a{
+	color:Goldenrod;
+	text-shadow:1px 1px 1px gray;
+
+}
+.başlık a:hover , .by a:hover{
+	opacity:0.7;
+}
+.by span{
+	font-size:14px;
+	text-shadow:clear;
+	color:gray;	
+}
+.hbaş{
+	background-color:#F0E9DC
+}
+.hbaş .container div{
+	background-color:#F0E9DC;
+	color:#6F5F5C;
+	text-shadow:1px 1px 1px black;
+	padding:10px;
+}
+
+/* FOOTER */
+.footer{
+	background-color:#F0E9DC;
+	color:#6F5F5C;
+	padding:20px;
+	margin-top:20px;
+	text-align:center;
+	font-size:15px;
+}
+
+
+head img{
+	border-radius:50%;
+}
+
+/* MEDIA QUERY */
+
+@media all and (max-width:960px){
+	.content1{
+		font-size:20px;
+		margin-left:30px;
+	}
+}
+@media all and (max-width:700px){
+	.content1{
+		font-size:16px;
+		margin-left:20px;
+	}
+}
+

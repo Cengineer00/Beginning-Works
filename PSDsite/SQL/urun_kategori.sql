@@ -1,0 +1,9 @@
+INSERT INTO `urun_kategori` VALUES (1, 1, 1);
+INSERT INTO `urun_kategori` VALUES (2, 2, 2);
+INSERT INTO `urun_kategori` VALUES (3, 2, 3);
+INSERT INTO `urun_kategori` VALUES (4, 4, 4);
+INSERT INTO `urun_kategori` VALUES (5, 5, 5);
+INSERT INTO `urun_kategori` VALUES (6, 6, 6);
+INSERT INTO `urun_kategori` VALUES (7, 3, 7);
+INSERT INTO `urun_kategori` VALUES (8, 1, 8);
+INSERT INTO `urun_kategori` VALUES (9, 4, 1);
